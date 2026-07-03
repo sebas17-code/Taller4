@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Taller-4 - Inicio</title>
+    <meta
+      name="description"
+      content="Página principal del taller 4 de desarrollo web con Bootstrap y toda la información sobre la UEFA Champions League"
+    />
+    <meta
+      name="keywords"
+      content="Taller 4 bootstrap, UEFA Champions League, UCL"
+    />
+
+    <meta name="author" content="Sebastian Monsalve" />
+    <link
+      rel="icon"
+      href="assets/img/champions_blanco.png"
+      type="image/png"
+    />
+
+    <meta name="theme-color" content="#1f4ea8" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/img/img_champions.png"
+      fetchpriority="high"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="bg-light">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+       
+          <div class="navbar-brand d-flex align-items-center m-0 p-0">
+            <img
+              src="assets/img/champions_blanco.png"
+              alt="Logo UCL"
+              width="30"
+              height="30"
+              class="me-2"
+            />
+            <span class="fs-5 fw-bold text-light font-monospace">UCL</span>
+            </div>
+          
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html" aria-current="page">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="app/admin.html">Panel Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="app/cliente.html"> Club</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-warning fw-bold ms-2 text-dark"
+                  href="app/login.html"
+                >
+                  <i class="bi bi-person-circle me-1" aria-hidden="true"></i
+                  >Acceder
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main style="margin-top: 56px">
+      <div id="carrusel1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carrusel1"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carrusel1"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carrusel1"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/img_champions.png"
+              width="1920"
+              height="550"
+              class="d-block w-100"
+              style="
+                height: 550px;
+                object-fit: cover;
+                background-color: #001f5c;
+              "
+              alt="Trofeo de la UEFA Champions League en el campo de juego"
+              fetchpriority="high"
+            />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style="
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 8px;
+                padding: 15px;
+              "
+            >
+              <h1 class="h2">UEFA Champions League</h1>
+              <p>
+                ¡La competición de clubes más grande del mundo está de vuelta!
+              </p>
+              <a href="app/registro.html" class="btn btn-primary me-2"
+                >Registrarse</a
+              >
+              <a href="#grupos" class="btn btn-outline-light">Ver Grupos</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="assets/img/equipos.png"
+              width="1920"
+              height="550"
+              class="d-block w-100"
+              style="height: 550px; object-fit: cover"
+              alt="Jugadores disputando la gran Final de la Champions"
+            />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style="
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 8px;
+                padding: 15px;
+              "
+            >
+              <h2>Los Mejores Equipos del Mundo</h2>
+              <p>32 equipos compitiendo por la orejona</p>
+              <a href="#equipos" class="btn btn-primary">Ver Equipos</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="assets/img/Psg_champions.png"
+              width="1920"
+              height="550"
+              class="d-block w-100"
+              style="height: 550px; object-fit: cover"
+              alt="Celebración del Paris Saint-Germain como campeón"
+            />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style="
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 8px;
+                padding: 15px;
+              "
+            >
+              <h2>ACTUAL CAMPEON</h2>
+              <p>Paris Saint Germain</p>
+              <a href="app/login.html" class="btn btn-warning fw-bold text-dark"
+                >Ver más info</a
+              >
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carrusel1"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carrusel1"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+      <section id="grupos" class="py-5 bg-light text-dark">
+        <div class="container">
+          <h2 class="text-center mb-2 fw-bold">Todo sobre la Champions</h2>
+          <p class="text-center text-secondary mb-5">
+            Información sobre grupos, estadios e historia del torneo
+          </p>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/img/Fase-grupos.jpg"
+                  width="400"
+                  height="200"
+                  loading="lazy"
+                  class="card-img-top"
+                  style="height: 200px; object-fit: cover"
+                  alt="Sorteo oficial de la Fase de Grupos"
+                />
+                <div class="card-body">
+                  <h3 class="h5 card-title">
+                    <i
+                      class="bi bi-grid-3x3-gap-fill me-2 text-warning"
+                      aria-hidden="true"
+                    ></i
+                    >Fase de Grupos
+                  </h3>
+                  <p class="card-text">
+                    32 equipos en 8 grupos. Los 2 primeros de cada grupo pasan a
+                    octavos de final.
+                  </p>
+                  <span class="badge bg-dark text-warning">32 equipos</span>
+                  <span class="badge bg-primary ms-1">8 grupos</span>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <a
+                    href="#equipos"
+                    class="btn btn-warning w-100 text-dark fw-bold"
+                    >Ver Equipos</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/img/estadios.jpg"
+                  width="400"
+                  height="200"
+                  loading="lazy"
+                  class="card-img-top"
+                  style="height: 200px; object-fit: cover"
+                  alt="Vista estructural de un estadio europeo"
+                />
+                <div class="card-body">
+                  <h3 class="h5 card-title">
+                    <i
+                      class="bi bi-building me-2 text-primary"
+                      aria-hidden="true"
+                    ></i
+                    >Estadios Sede
+                  </h3>
+                  <p class="card-text">
+                    Los estadios más grandes de Europa abren sus puertas para
+                    las noches mágicas de Champions.
+                  </p>
+                  <span class="badge bg-dark text-warning">12 sedes</span>
+                  <span class="badge bg-success ms-1">Europa</span>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <a href="#estadios" class="btn btn-primary w-100"
+                    >Ver Estadios</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/img/todos-los-campeones-champions-1.jpg"
+                  width="400"
+                  height="200"
+                  loading="lazy"
+                  class="card-img-top"
+                  style="height: 200px; object-fit: cover"
+                  alt="Historial de campeones alzando la orejona"
+                />
+                <div class="card-body">
+                  <h3 class="h5 card-title">
+                    <i
+                      class="bi bi-clock-history me-2 text-danger"
+                      aria-hidden="true"
+                    ></i
+                    >Historia y Récords
+                  </h3>
+                  <p class="card-text">
+                    Desde 1955 la competición ha tenido momentos increíbles. El
+                    Real Madrid lidera con 15 títulos.
+                  </p>
+                  <span class="badge bg-dark text-warning">70 años</span>
+                  <span class="badge bg-danger ms-1"
+                    >Real Madrid 15 títulos</span
+                  >
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <a href="app/registro.html" class="btn btn-outline-dark w-100"
+                    >Registrarse</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="equipos" class="py-5 text-dark">
+        <div class="container">
+          <h2 class="text-center mb-2 fw-bold">Equipos Clasificados</h2>
+          <p class="text-center text-dark-50 mb-4">
+            Los mejores clubes de Europa compiten por la gloria
+          </p>
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card text-center shadow-lg">
+                <div class="card-body">
+                  <img
+                    src="assets/img/Real Madrid.png"
+                    width="60"
+                    height="60"
+                    loading="lazy"
+                    style="height: 60px; object-fit: contain"
+                    alt="Escudo oficial del Real Madrid"
+                    class="mb-2"
+                  />
+                  <h3 class="h6 fw-bold mb-1">Real Madrid</h3>
+                  <small class="text-muted d-block">España · La Liga</small>
+                  <span class="badge bg-dark text-warning mt-1">15 UCL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card text-center shadow-lg">
+                <div class="card-body">
+                  <img
+                    src="assets/img/Manchester city.png"
+                    width="60"
+                    height="60"
+                    loading="lazy"
+                    style="height: 60px; object-fit: contain"
+                    alt="Escudo oficial del Manchester City"
+                    class="mb-2"
+                  />
+                  <h3 class="h6 fw-bold mb-1">Manchester City</h3>
+                  <small class="text-muted d-block">Inglaterra · Premier</small>
+                  <span class="badge bg-primary mt-1">1 UCL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card text-center shadow-lg">
+                <div class="card-body">
+                  <img
+                    src="assets/img/Barcelona.png"
+                    width="60"
+                    height="60"
+                    loading="lazy"
+                    style="height: 60px; object-fit: contain"
+                    alt="Escudo oficial del FC Barcelona"
+                    class="mb-2"
+                  />
+                  <h3 class="h6 fw-bold mb-1">FC Barcelona</h3>
+                  <small class="text-muted d-block">España · La Liga</small>
+                  <span class="badge bg-dark text-warning mt-1">5 UCL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card text-center shadow-lg">
+                <div class="card-body">
+                  <img
+                    src="assets/img/Bayern Munchen.png"
+                    width="60"
+                    height="60"
+                    loading="lazy"
+                    style="height: 60px; object-fit: contain"
+                    alt="Escudo oficial del Bayern München"
+                    class="mb-2"
+                  />
+                  <h3 class="h6 fw-bold mb-1">Bayern München</h3>
+                  <small class="text-muted d-block"
+                    >Alemania · Bundesliga</small
+                  >
+                  <span class="badge bg-danger mt-1">6 UCL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card text-center shadow-lg">
+                <div class="card-body">
+                  <img
+                    src="assets/img/Logo-Liverpool.png"
+                    width="60"
+                    height="60"
+                    loading="lazy"
+                    style="height: 60px; object-fit: contain"
+                    alt="Escudo oficial del Liverpool FC"
+                    class="mb-2"
+                  />
+                  <h3 class="h6 fw-bold mb-1">Liverpool FC</h3>
+                  <small class="text-muted d-block">Inglaterra · Premier</small>
+                  <span class="badge bg-danger mt-1">6 UCL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card text-center shadow-lg">
+                <div class="card-body">
+                  <img
+                    src="assets/img/psg.png"
+                    width="60"
+                    height="60"
+                    loading="lazy"
+                    style="height: 60px; object-fit: contain"
+                    alt="Escudo oficial del PSG"
+                    class="mb-2"
+                  />
+                  <h3 class="h6 fw-bold mb-1">PSG</h3>
+                  <small class="text-muted d-block">Francia · Ligue 1</small>
+                  <span class="badge bg-secondary mt-1">2 UCL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card text-center shadow-lg">
+                <div class="card-body">
+                  <img
+                    src="assets/img/inter_milan.png"
+                    width="60"
+                    height="60"
+                    loading="lazy"
+                    style="height: 60px; object-fit: contain"
+                    alt="Escudo oficial del Inter de Milán"
+                    class="mb-2"
+                  />
+                  <h3 class="h6 fw-bold mb-1">Inter de Milán</h3>
+                  <small class="text-muted d-block">Italia · Serie A</small>
+                  <span class="badge bg-primary mt-1">3 UCL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card text-center border-dark shadow-lg">
+                <div class="card-body">
+                  <i
+                    class="bi bi-plus-circle fs-1 text-dark"
+                    aria-hidden="true"
+                  ></i>
+                  <h3 class="h6 fw-bold mt-2">+25 equipos más</h3>
+                  <small class="text-muted d-block"
+                    >Ver todos los clasificados</small
+                  >
+                  <a
+                    href="app/login.html"
+                    class="btn btn-sm btn-dark text-warning mt-2 fw-bold"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="estadios" class="py-5 bg-light text-dark">
+        <div class="container">
+          <h2 class="text-center mb-2 fw-bold">Sedes del Torneo</h2>
+          <p class="text-center text-secondary mb-4">
+            Los estadios más famosos de Europa
+          </p>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/img/Allianz Arena.jpg"
+                  width="400"
+                  height="180"
+                  loading="lazy"
+                  class="card-img-top"
+                  style="height: 180px; object-fit: cover"
+                  alt="Estadio Allianz Arena iluminado en Munich"
+                />
+                <div class="card-body">
+                  <h3 class="h5 card-title">Allianz Arena</h3>
+                  <p class="card-text text-secondary">
+                    <i class="bi bi-geo-alt me-1" aria-hidden="true"></i>Munich,
+                    Alemania · 75.024 espectadores
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/img/Santiago Bernabéu.jpg"
+                  width="400"
+                  height="180"
+                  loading="lazy"
+                  class="card-img-top"
+                  style="height: 180px; object-fit: cover"
+                  alt="Estadio Santiago Bernabéu en Madrid"
+                />
+                <div class="card-body">
+                  <h3 class="h5 card-title">Santiago Bernabéu</h3>
+                  <p class="card-text text-secondary">
+                    <i class="bi bi-geo-alt me-1" aria-hidden="true"></i>Madrid,
+                    España · 81.044 espectadores
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/img/Anfield.jpg"
+                  width="400"
+                  height="180"
+                  loading="lazy"
+                  class="card-img-top"
+                  style="height: 180px; object-fit: cover"
+                  alt="Estadio Anfield en Liverpool"
+                />
+                <div class="card-body">
+                  <h3 class="h5 card-title">Anfield</h3>
+                  <p class="card-text text-secondary">
+                    <i class="bi bi-geo-alt me-1" aria-hidden="true"></i
+                    >Liverpool, Inglaterra · 61.276 espectadores
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-5">
+            <h2 class="h5 text-warning">
+              <i class="bi bi-trophy-fill me-2" aria-hidden="true"></i>UCL
+            </h2>
+            <p class="text-light small">
+              El torneo de fútbol de clubes más importante del planeta.
+              Organizado por la UEFA desde 1955.
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <h2 class="h6 text-uppercase mb-3 text-white">Navegación</h2>
+            <ul class="list-unstyled small">
+              <li class="mb-2">
+                <a href="index.html" class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
+                  >Inicio</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="app/admin.html"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
+                  >Panel Admin</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="app/cliente.html"
+                  class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
+                  >Club</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 text-md-end">
+            <h2 class="h6 text-uppercase mb-3 text-white">Síguenos</h2>
+            <div class="d-flex gap-3 fs-5 justify-content-md-end mb-3">
+              <a
+                href="#"
+                class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
+                aria-label="Visitar nuestro Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="#"
+                class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
+                aria-label="Visitar nuestro Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
+                aria-label="Visitar nuestro canal de YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a
+                href="#"
+                class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
+                aria-label="Visitar nuestro perfil de X"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+            </div>
+            <p class="text-light small">UEFA Oficial</p>
+          </div>
+        </div>
+        <hr class="mt-4 border-secondary" />
+        <p class="text-center text-light small mb-0">
+          &copy; UEFA Champions League. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
